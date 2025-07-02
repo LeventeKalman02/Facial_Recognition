@@ -30,8 +30,8 @@ cv2.rectangle(imgTest, (faceLocTest[3], faceLocTest[0]), (faceLocTest[1], faceLo
 # Compare the faces to see if they match by finding the distance between the face encodings. These are 128 size vectors that represent the face
 results = face_recognition.compare_faces([encodeMark], encodeTest) # Compare the face encodings
 faceDis = face_recognition.face_distance([encodeMark], encodeTest) # Calculate the distance between the face encodings to find out hour similar they are
-print(results, faceDis) # Results: Prints True if the faces match, False otherwise. faceDis: Prints the distance between the faces, lower means more similar
-
+#print(results, faceDis) # Results: Prints True if the faces match, False otherwise. faceDis: Prints the distance between the faces, lower means more similar (between 0 and 1, where 0 is identical and 1 is completely different)
+cv2.putText(imgTest, f'{results} {round(faceDis[0], 2)}', (50, 50), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 255, 0), 2) # Put the results and distance on the test image
 
 # Display the images using OpenCV to ensure they are loaded correctly
 cv2.imshow("Markiplier", imgMark) # Display the image in a window
