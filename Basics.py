@@ -5,13 +5,13 @@ import face_recognition # This library is used for face recognition tasks and si
 # load main image file
 # The main image file is a clear image of Markiplier
 # This will be used to create the face encoding for recognition
-imgMark = face_recognition.load_image_file("Images/Markiplier.jpg") # Load the image file
+imgMark = face_recognition.load_image_file("ImagesBasic/Markiplier.jpg") # Load the image file
 imgMark = cv2.cvtColor(imgMark, cv2.COLOR_BGR2RGB) # Convert the image from BGR to RGB
 
 # load test image file
 # The test image is at an angle and has different lighting conditions
 # This will test the robustness of the face recognition model
-imgTest = face_recognition.load_image_file("Images/Markiplier_test.jpg") # Load the image file
+imgTest = face_recognition.load_image_file("ImagesBasic/Markiplier_test.jpg") # Load the image file
 imgTest = cv2.cvtColor(imgTest, cv2.COLOR_BGR2RGB) # Convert the image from BGR to RGB
 
 # Detect faces in the image so we can see where the face is located and that it is detected correctly
