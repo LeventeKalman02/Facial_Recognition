@@ -1,4 +1,5 @@
 # Facial_Recognition
+The purpose of this project is to create a basic facial recognitions model. 
 This project utilizes OpenCV, Cmake, dlib, and face_recognition libraries.
 
 ## Basics
