@@ -1,6 +1,7 @@
 # Facial_Recognition
 The purpose of this project is to create a basic facial recognitions model. 
-This project utilizes OpenCV, Cmake, dlib, and face_recognition libraries.
+
+This project utilizes ***OpenCV, Cmake, dlib, and face_recognition*** libraries.
 
 ## Basics
 The [Basics.py](Basics.py) file is a broken down, step by step explanation for understanding the concept of how the imports and libraries work to be able to recognise the faces in the images along with how to use them
